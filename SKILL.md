@@ -25,7 +25,7 @@ Integrate external tools via MCP (Model Context Protocol):
 ## Architecture
 
 ```
-OpenClaw Agent
+Hermes Agent
     ↓
 MCP Client (stdio/sse)
     ↓
@@ -54,12 +54,12 @@ MCP Client (stdio/sse)
 ## Configuration
 
 ```json
-// ~/.openclaw/mcp.json
+// ~/.hermes/mcp.json
 {
   "mcpServers": {
     "filesystem": {
       "command": "npx",
-      "args": ["-y", "@modelcontextprotocol/server-filesystem", "~/.openclaw/workspace"]
+      "args": ["-y", "@modelcontextprotocol/server-filesystem", "~/.hermes/workspace"]
     },
     "web-search": {
       "command": "npx",
